@@ -6,7 +6,7 @@
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Product
+    public class Product : Iitem
     {
         public Product(string description, double unitCost)
         {

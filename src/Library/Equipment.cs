@@ -6,7 +6,7 @@
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Equipment
+    public class Equipment : Iitem
     {
         public Equipment(string description, double hourlyCost)
         {
