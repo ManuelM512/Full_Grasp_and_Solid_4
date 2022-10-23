@@ -21,6 +21,7 @@ namespace Full_GRASP_And_SOLID
             PopulateCatalogs();
 
             Recipe recipe = new Recipe();
+            //Todos los métodos pasaron a ser de los catálogos
             recipe.FinalProduct = productCatalog.GetProduct("Café con leche");
             recipe.AddStep(productCatalog.GetProduct("Café"), 100, equipmentCatalog.GetEquipment("Cafetera"), 120);
             recipe.AddStep(productCatalog.GetProduct("Leche"), 200, equipmentCatalog.GetEquipment("Hervidor"), 60);
@@ -32,6 +33,7 @@ namespace Full_GRASP_And_SOLID
             printer.PrintRecipe(recipe);
         }
 
+        //Por Creator, el catálogo recibe la información del ítem y lo crea 
         private static void PopulateCatalogs()
         {
             productCatalog.Add("Café", 100);
